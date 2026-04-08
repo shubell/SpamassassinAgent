@@ -201,17 +201,6 @@
             </summary>
             <param name="other">clone from</param>
         </member>
-        <member name="M:SpamassassinAgent.SpamassassinSettings.ReadXMLConfig(System.String)">
-            <summary>
-            Reads in configuration options from an XML file and sets the instance
-            variables to the corresponding values that are read in if they
-            are valid. If an invalid value is found, or a value is not
-            set in the XML file, the variable will not be changed from its
-            default value.
-            </summary>
-            <param name="path">The path to the XML configuration file.</param>
-            <returns>True if the file was read.</returns>
-        </member>
         <member name="P:SpamassassinAgent.SpamassassinSettings.SpamassassinPath">
             <summary>
             Path to Spamassassin Executable (spamc.exe)
@@ -241,6 +230,17 @@
             <summary>
             Maximum log level to log
             </summary>
+        </member>
+        <member name="M:SpamassassinAgent.SpamassassinSettings.ReadXMLConfig(System.String)">
+            <summary>
+            Reads in configuration options from an XML file and sets the instance
+            variables to the corresponding values that are read in if they
+            are valid. If an invalid value is found, or a value is not
+            set in the XML file, the variable will not be changed from its
+            default value.
+            </summary>
+            <param name="path">The path to the XML configuration file.</param>
+            <returns>True if the file was read.</returns>
         </member>
     </members>
 </doc>
